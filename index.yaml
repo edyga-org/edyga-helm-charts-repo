@@ -1,0 +1,566 @@
+apiVersion: v1
+entries:
+  atlassian-confluence:
+  - apiVersion: v1
+    appVersion: 6.9.0
+    created: "2019-11-22T20:24:08.575322Z"
+    description: Enterprise Wiki Collaboration Platform.
+    digest: 91cc8154bac15f6936cf4f4b08fb83673eb08168884eb6f37f2c86ffc9a5f1d4
+    home: https://www.atlassian.com/software/confluence
+    keywords:
+    - atlassian
+    - confluence
+    name: atlassian-confluence
+    sources:
+    - https://bitbucket.org/atlassian/docker-atlassian-confluence-server
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/atlassian-confluence-0.1.0.tgz
+    version: 0.1.0
+  atlassian-jira-software:
+  - apiVersion: v1
+    appVersion: 7.10.1
+    created: "2019-11-22T20:24:08.575825Z"
+    description: Project Management Tool for Agile Teams.
+    digest: 5124e385311084a270ad41d7eeeb33b192f269918cab3da977d816cd0a6430c7
+    home: https://www.atlassian.com/software/jira
+    keywords:
+    - atlassian
+    - jira
+    name: atlassian-jira-software
+    sources:
+    - https://github.com/cptactionhank/docker-atlassian-jira-software
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/atlassian-jira-software-0.1.0.tgz
+    version: 0.1.0
+  bash:
+  - apiVersion: v1
+    created: "2019-11-22T20:24:08.576154Z"
+    description: Bash container
+    digest: 8d806b89ff4e6a3ccfa6a2017530f29f02a1a7e140db1e93d86b2d5b75499cd2
+    keywords:
+    - bash
+    maintainers:
+    - email: david.carbajosa@pleyadesltd.com
+      name: davidcarbajosatesoro
+    name: bash
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/bash-1.0.0.tgz
+    version: 1.0.0
+  consul:
+  - apiVersion: v1
+    created: "2019-11-22T20:24:08.577128Z"
+    description: Install and configure Consul on Kubernetes.
+    digest: 51c157c697275cfef8903768b6fdd107618c2ba9dab3e3965d658541af58f378
+    home: https://www.consul.io
+    name: consul
+    sources:
+    - https://github.com/hashicorp/consul
+    - https://github.com/hashicorp/consul-helm
+    - https://github.com/hashicorp/consul-k8s
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/consul-0.4.0.tgz
+    version: 0.4.0
+  docker-registry:
+  - apiVersion: v1
+    appVersion: 2.6.2
+    created: "2019-11-22T20:24:08.577747Z"
+    description: A Helm chart for Docker Registry
+    digest: a6ad4e335d933c28e9ba2425e7b6d37b563832db04b7d37be5c3c2c706006805
+    home: https://hub.docker.com/_/registry/
+    icon: https://hub.docker.com/public/images/logos/mini-logo.svg
+    maintainers:
+    - email: jpds@protonmail.com
+      name: jpds
+    - email: pete.brown@powerhrg.com
+      name: rendhalver
+    name: docker-registry
+    sources:
+    - https://github.com/docker/distribution-library-image
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/docker-registry-1.6.1.tgz
+    version: 1.6.1
+  efk:
+  - apiVersion: v1
+    appVersion: 6.4.2
+    created: "2019-11-22T20:24:08.579788Z"
+    dependencies:
+    - name: kibana
+      repository: file://../kibana
+      version: 0.4.3
+    - name: elasticsearch
+      repository: file://../elasticsearch
+      version: 0.1.5
+    - name: fluent-bit
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 0.8.0
+    description: EFK stack
+    digest: 8d493d0da578a643d0a1061a5703792c23a58341a402a2be5228a9501e4a070e
+    home: https://akomljen.com/get-kubernetes-logs-with-efk-stack-in-5-minutes/
+    keywords:
+    - elasticsearch
+    - kibana
+    - fluent-bit
+    maintainers:
+    - email: alen.komljen@live.com
+      name: komljen
+    name: efk
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/efk-0.1.2.tgz
+    version: 0.1.2
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 6.4.2
+    created: "2019-11-22T20:24:08.580236Z"
+    description: A Helm chart for Elasticsearch cluster
+    digest: bea20a2e10fc29e025bdac58db8f193e1247c9f770630c9db1792cb5d50453a4
+    maintainers:
+    - email: alen.komljen@live.com
+      name: komljen
+      url: https://akomljen.com
+    name: elasticsearch
+    sources:
+    - https://github.com/upmc-enterprises/elasticsearch-operator
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/elasticsearch-0.1.5.tgz
+    version: 0.1.5
+  elasticsearch-operator:
+  - apiVersion: v1
+    appVersion: 0.0.12
+    created: "2019-11-22T20:24:08.58059Z"
+    description: A Helm chart for Elasticsearch operator
+    digest: 496f49d45c9972ec84a8915254d65c0b188b804d0805d701121291a71d40da62
+    maintainers:
+    - email: alen.komljen@live.com
+      name: komljen
+      url: https://akomljen.com
+    name: elasticsearch-operator
+    sources:
+    - https://github.com/upmc-enterprises/elasticsearch-operator
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/elasticsearch-operator-0.1.5.tgz
+    version: 0.1.5
+  grafana:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2019-11-22T20:24:08.583895Z"
+    description: A Helm chart for Kubernetes
+    digest: 3bc4bf1873c825a7ede9c0d95324092e9818f8cab0195840a19767ddbac82036
+    name: grafana
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/grafana-1.1.0.tgz
+    version: 1.1.0
+  ingress:
+  - apiVersion: v1
+    created: "2019-11-22T20:24:08.584213Z"
+    description: Ingress single entry poing
+    digest: 330f41a9e418d91f4c3055d5c38cac304d46f07f04a08a4cf1e7640e318a7431
+    keywords:
+    - routing
+    - kubernetes
+    maintainers:
+    - email: david.carbajosa@pleyadesltd.com
+      name: davidcarbajosatesoro
+    name: ingress
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/ingress-1.0.0.tgz
+    version: 1.0.0
+  jenkins:
+  - apiVersion: v1
+    appVersion: lts
+    created: "2019-11-22T20:24:08.585935Z"
+    description: Open source continuous integration server. It supports multiple SCM
+      tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
+      Maven-based projects as well as arbitrary scripts.
+    digest: 46e4ecdbdc91c7b95f389f5cba02d9c67002e41af09bbb7a52d45f49a23f268b
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    - email: viglesias@google.com
+      name: viglesiasce
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    - https://github.com/nuvo/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/jenkins-1.3.3.tgz
+    version: 1.3.3
+  keycloak:
+  - apiVersion: v1
+    appVersion: 5.0.0
+    created: "2019-11-22T20:24:08.588496Z"
+    dependencies:
+    - condition: keycloak.persistence.deployPostgres
+      name: postgresql
+      repository: file://../postgresql
+      version: 4.0.0
+    description: Open Source Identity and Access Management For Modern Applications
+      and Services
+    digest: 21d2b3154b5406385627653834857bdfb0978ce65549a914442506c49ca83fc1
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_logo_480x108.png
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - ldap
+    maintainers:
+    - email: unguiculus@gmail.com
+      name: unguiculus
+    - email: thomas.darimont+github@gmail.com
+      name: thomasdarimont
+    name: keycloak
+    sources:
+    - https://github.com/jboss-dockerfiles/keycloak
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/keycloak-4.14.0.tgz
+    version: 4.14.0
+  keycloak-gatekeeper:
+  - apiVersion: v1
+    appVersion: 4.8.0.Final
+    created: "2019-11-22T20:24:08.589054Z"
+    description: Keycloak gatekeeper
+    digest: 5406f9508d2369bb8bbf4f8c183845b9796812b52b5bf8b226659a7dcdd149aa
+    home: https://github.com/keycloak/keycloak-gatekeeper
+    icon: https://raw.githubusercontent.com/keycloak/keycloak-misc/master/logo/keycloak_logo_600px.png
+    keywords:
+    - authentication
+    - authorization
+    - keycloak
+    - proxy
+    maintainers:
+    - email: gabibbo97@gmail.com
+      name: gabibbo97
+    name: keycloak-gatekeeper
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/keycloak-gatekeeper-1.2.1.tgz
+    version: 1.2.1
+  kiali:
+  - apiVersion: v1
+    appVersion: "0.14"
+    created: "2019-11-22T20:24:08.589416Z"
+    description: Kiali is an open source project for service mesh observability, refer
+      to https://www.kiali.io for details.
+    digest: cc2324bf0e9fd17fa0c7f7b1a6dbb7939f64a6bee35629c1035f0315ecd8081f
+    name: kiali
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/kiali-1.1.0.tgz
+    version: 1.1.0
+  kiali-operator:
+  - apiVersion: v1
+    appVersion: "0.14"
+    created: "2019-11-22T20:24:08.589705Z"
+    description: Kiali is an open source project for service mesh observability, refer
+      to https://www.kiali.io for details.
+    digest: baa28a5b46f8bb5966e685e3f2821454f0def5b4870133cf25764eab9f87bad9
+    name: kiali-operator
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/kiali-operator-1.1.0.tgz
+    version: 1.1.0
+  kibana:
+  - apiVersion: v1
+    appVersion: 6.4.2
+    created: "2019-11-22T20:24:08.590102Z"
+    description: Kibana is an open source data visualization plugin for Elasticsearch
+    digest: e5e6e0d7f2b5dd91ac7e5e6b8f622f72d250b9aacf0841bf0e3f9596fdd7f199
+    home: https://www.elastic.co/products/kibana
+    icon: https://raw.githubusercontent.com/elastic/kibana/master/src/ui/public/icons/kibana-color.svg
+    keywords:
+    - elasticsearch
+    - kibana
+    maintainers:
+    - email: casey@monax.io
+      name: compleatang
+    - email: alen.komljen@live.com
+      name: komljen
+    name: kibana
+    sources:
+    - https://github.com/elastic/kibana
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/kibana-0.4.3.tgz
+    version: 0.4.3
+  kube-spot-termination-notice-handler:
+  - apiVersion: v1
+    appVersion: 1.10.8-1
+    created: "2019-11-22T20:24:08.59042Z"
+    description: Watch and action AWS spot termination events
+    digest: b234488ffc4c0109b857cf84bfa233572c4c673decbe8437365095f632abb030
+    home: https://github.com/kube-aws/kube-spot-termination-notice-handler
+    maintainers:
+    - email: egeland@gmail.com
+      name: egeland
+    name: kube-spot-termination-notice-handler
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/kube-spot-termination-notice-handler-0.4.0.tgz
+    version: 0.4.0
+  kube2iam:
+  - apiVersion: v1
+    appVersion: 0.10.7
+    created: "2019-11-22T20:24:08.590932Z"
+    description: Provide IAM credentials to pods based on annotations.
+    digest: b54ecf254501ae4a3a5e3362286839861624231b215d7708f8a875f29def833d
+    home: https://github.com/jtblin/kube2iam
+    keywords:
+    - kube2iam
+    - aws
+    - iam
+    - security
+    maintainers:
+    - email: jm.carp@gmail.com
+      name: jmcarp
+    - email: michael.haselton@gmail.com
+      name: icereval
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    name: kube2iam
+    sources:
+    - https://github.com/jtblin/kube2iam
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/kube2iam-2.0.1.tgz
+    version: 2.0.1
+  kubernetes-dashboard:
+  - apiVersion: v1
+    appVersion: 1.10.1
+    created: "2019-11-22T20:24:08.591554Z"
+    description: General-purpose web UI for Kubernetes clusters
+    digest: 54a2eeef7d91b2faa2ee034a245d85338f069a5525ccc55f32b1179dd244f4e4
+    home: https://github.com/kubernetes/dashboard
+    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+    keywords:
+    - kubernetes
+    - dashboard
+    maintainers:
+    - email: Kevin.Fox@pnnl.gov
+      name: kfox1111
+    - email: cdesaintmartin@wiremind.fr
+      name: desaintmartin
+    name: kubernetes-dashboard
+    sources:
+    - https://github.com/kubernetes/dashboard
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/kubernetes-dashboard-1.5.2.tgz
+    version: 1.5.2
+  mysql:
+  - apiVersion: v1
+    appVersion: 5.7.14
+    created: "2019-11-22T20:24:08.592221Z"
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system.
+    digest: 88f9b17fa86b4d4bc95c78c696bd4fb6c9fb65795afbb2a3b1bf97a4c9e7c880
+    home: https://www.mysql.com/
+    icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    maintainers:
+    - email: o.with@sportradar.com
+      name: olemarkus
+    - email: viglesias@google.com
+      name: viglesiasce
+    name: mysql
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/docker-library/mysql
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/mysql-0.10.2.tgz
+    version: 0.10.2
+  nexus3:
+  - apiVersion: v1
+    appVersion: 3.13.0-01
+    created: "2019-11-22T20:24:08.593592Z"
+    description: Sonatype Nexus is an open source repository manager
+    digest: c2d68e2f79c3182b6f4010ef61ac7dac90649e9009f6ccb086d6581170ded4a0
+    home: https://www.sonatype.com/nexus-repository-oss
+    icon: http://www.sonatype.org/nexus/content/uploads/2015/06/Nexus-Logo.jpg
+    keywords:
+    - artifacts
+    - dependency
+    - management
+    - sonatype
+    - nexus
+    - repository
+    maintainers:
+    - email: rjkernick@gmail.com
+      name: rjkernick
+    name: nexus3
+    sources:
+    - https://github.com/sonatype/nexus-public
+    - https://github.com/travelaudience/docker-nexus
+    - https://github.com/travelaudience/kubernetes-nexus
+    - https://github.com/travelaudience/docker-nexus-backup
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/nexus3-1.12.1.tgz
+    version: 1.12.1
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2019-11-22T20:24:08.594082Z"
+    description: nfs-client is an automatic provisioner that used your *already configured*
+      NFS server, automatically creating Persistent Volumes.
+    digest: d3005d9da79bafad0c3a1c73d1eac5853c1147e46b513923b05d06a1e1464db2
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: bart@verwilst.be
+      name: verwilst
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/nfs-client-provisioner-1.2.6.tgz
+    version: 1.2.6
+  nginx:
+  - apiVersion: v1
+    created: "2019-11-22T20:24:08.594508Z"
+    description: Nginx server
+    digest: f5c390b49397d7b26a536a4be7e64f302c0deb99e5ea7fb2c05e6b9a9381787a
+    keywords:
+    - web server
+    maintainers:
+    - email: david.carbajosa@pleyadesltd.com
+      name: davidcarbajosatesoro
+    name: nginx
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/nginx-1.0.0.tgz
+    version: 1.0.0
+  nginx-ingress:
+  - apiVersion: v1
+    appVersion: 0.24.1
+    created: "2019-11-22T20:24:08.595618Z"
+    description: An nginx Ingress controller that uses ConfigMap to store the nginx
+      configuration.
+    digest: 157947a76bf2b48f5360a5d21522534b17c3cce9b3390ca829b234ed6040728c
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    maintainers:
+    - email: jack.zampolin@gmail.com
+      name: jackzampolin
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    name: nginx-ingress
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/nginx-ingress-1.6.0.tgz
+    version: 1.6.0
+  postgresql:
+  - apiVersion: v1
+    appVersion: "10.1"
+    created: "2019-11-22T20:24:08.596426Z"
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: ac76ee8704c7cc42a75991e56c258190b44114875d70e60efaef1f76b24e8332
+    home: https://www.postgresql.org/
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: david.carbajosa@pleyadesltd.com
+      name: davidcarbajosatesoro
+    name: postgresql
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/postgresql-4.0.0.tgz
+    version: 4.0.0
+  smtp:
+  - apiVersion: v1
+    created: "2019-11-22T20:24:08.596712Z"
+    description: SMTP server
+    digest: b81bc17a065e724e24c548f3a36a4e1496ab30b3e66c2f6c5b1774950d923b19
+    keywords:
+    - smtp server
+    maintainers:
+    - email: david.carbajosa@pleyadesltd.com
+      name: davidcarbajosatesoro
+    name: smtp
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/smtp-1.0.0.tgz
+    version: 1.0.0
+  sonarqube:
+  - apiVersion: v1
+    appVersion: 6.7.6
+    created: "2019-11-22T20:24:08.598879Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: file://../postgresql
+      version: 4.0.0
+    - condition: mysql.enabled
+      name: mysql
+      repository: file://../mysql
+      version: 0.10.2
+    description: Sonarqube is an open sourced code quality scanning tool
+    digest: 29054b622443b758da2c8e5ade06e4b672015dcbee786f52e970d5372e1c103f
+    home: https://www.sonarqube.org/
+    icon: https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg
+    keywords:
+    - coverage
+    - security
+    - code
+    - quality
+    maintainers:
+    - email: rjkernick@gmail.com
+      name: rjkernick
+    name: sonarqube
+    sources:
+    - https://github.com/SonarSource/docker-sonarqube
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/sonarqube-0.10.2.tgz
+    version: 0.10.2
+  stolon:
+  - apiVersion: v1
+    appVersion: 0.13.0
+    created: "2019-11-22T20:24:08.600047Z"
+    description: Stolon - PostgreSQL cloud native High Availability.
+    digest: d41e7e0ba29a2b9b3e46f18d2db34bba09358c28939e5853f9f090f50bb67e52
+    home: https://github.com/sorintlab/stolon
+    icon: https://i.imgur.com/tIW8sAW.png
+    maintainers:
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: ipaq.lw@gmail.com
+      name: lwolf
+    name: stolon
+    sources:
+    - https://github.com/sorintlab/stolon
+    - https://github.com/lwolf/stolon-chart
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/stolon-1.3.0.tgz
+    version: 1.3.0
+  vault:
+  - apiVersion: v1
+    appVersion: 0.11.2
+    created: "2019-11-22T20:24:08.600603Z"
+    description: A Helm chart for Vault, a tool for managing secrets
+    digest: e2e83bec01ff8ffcad8311487a304b97235816514a32944e6cfdb1c417dd922d
+    home: https://www.vaultproject.io/
+    icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
+    maintainers:
+    - email: jpds@protonmail.com
+      name: jpds
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/docker-vault
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/vault-0.14.2.tgz
+    version: 0.14.2
+generated: "2019-11-22T20:24:08.574615Z"
