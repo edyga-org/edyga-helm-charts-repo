@@ -3,7 +3,7 @@ entries:
   atlassian-confluence:
   - apiVersion: v1
     appVersion: 6.9.0
-    created: "2019-11-22T23:04:06.145129Z"
+    created: "2019-11-23T10:07:55.852175Z"
     description: Enterprise Wiki Collaboration Platform.
     digest: 91cc8154bac15f6936cf4f4b08fb83673eb08168884eb6f37f2c86ffc9a5f1d4
     home: https://www.atlassian.com/software/confluence
@@ -19,7 +19,7 @@ entries:
   atlassian-jira-software:
   - apiVersion: v1
     appVersion: 7.10.1
-    created: "2019-11-22T23:04:06.145593Z"
+    created: "2019-11-23T10:07:55.853608Z"
     description: Project Management Tool for Agile Teams.
     digest: 5124e385311084a270ad41d7eeeb33b192f269918cab3da977d816cd0a6430c7
     home: https://www.atlassian.com/software/jira
@@ -34,7 +34,7 @@ entries:
     version: 0.1.0
   bash:
   - apiVersion: v1
-    created: "2019-11-22T23:04:06.145899Z"
+    created: "2019-11-23T10:07:55.854719Z"
     description: Bash container
     digest: 8d806b89ff4e6a3ccfa6a2017530f29f02a1a7e140db1e93d86b2d5b75499cd2
     keywords:
@@ -48,7 +48,7 @@ entries:
     version: 1.0.0
   consul:
   - apiVersion: v1
-    created: "2019-11-22T23:04:06.146921Z"
+    created: "2019-11-23T10:07:55.858275Z"
     description: Install and configure Consul on Kubernetes.
     digest: 51c157c697275cfef8903768b6fdd107618c2ba9dab3e3965d658541af58f378
     home: https://www.consul.io
@@ -63,7 +63,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.6.2
-    created: "2019-11-22T23:04:06.14759Z"
+    created: "2019-11-23T10:07:55.85988Z"
     description: A Helm chart for Docker Registry
     digest: a6ad4e335d933c28e9ba2425e7b6d37b563832db04b7d37be5c3c2c706006805
     home: https://hub.docker.com/_/registry/
@@ -82,7 +82,7 @@ entries:
   edyga-system:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2019-11-22T23:04:06.151921Z"
+    created: "2019-11-23T10:07:55.870135Z"
     dependencies:
     - condition: kafka-zookeeper.enabled
       name: kafka-zookeeper
@@ -118,7 +118,7 @@ entries:
   efk:
   - apiVersion: v1
     appVersion: 6.4.2
-    created: "2019-11-22T23:04:06.153638Z"
+    created: "2019-11-23T10:07:55.87419Z"
     dependencies:
     - name: kibana
       repository: file://../kibana
@@ -146,7 +146,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 6.4.2
-    created: "2019-11-22T23:04:06.154016Z"
+    created: "2019-11-23T10:07:55.875102Z"
     description: A Helm chart for Elasticsearch cluster
     digest: bea20a2e10fc29e025bdac58db8f193e1247c9f770630c9db1792cb5d50453a4
     maintainers:
@@ -162,7 +162,7 @@ entries:
   elasticsearch-operator:
   - apiVersion: v1
     appVersion: 0.0.12
-    created: "2019-11-22T23:04:06.154347Z"
+    created: "2019-11-23T10:07:55.875879Z"
     description: A Helm chart for Elasticsearch operator
     digest: 496f49d45c9972ec84a8915254d65c0b188b804d0805d701121291a71d40da62
     maintainers:
@@ -178,7 +178,7 @@ entries:
   grafana:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2019-11-22T23:04:06.157437Z"
+    created: "2019-11-23T10:07:55.885948Z"
     description: A Helm chart for Kubernetes
     digest: 3bc4bf1873c825a7ede9c0d95324092e9818f8cab0195840a19767ddbac82036
     name: grafana
@@ -187,7 +187,7 @@ entries:
     version: 1.1.0
   ingress:
   - apiVersion: v1
-    created: "2019-11-22T23:04:06.15771Z"
+    created: "2019-11-23T10:07:55.887532Z"
     description: Ingress single entry poing
     digest: 330f41a9e418d91f4c3055d5c38cac304d46f07f04a08a4cf1e7640e318a7431
     keywords:
@@ -200,10 +200,115 @@ entries:
     urls:
     - https://edyga-org.github.io/edyga-helm-charts-repo/ingress-1.0.0.tgz
     version: 1.0.0
+  istio:
+  - apiVersion: v1
+    appVersion: 1.4.0
+    created: "2019-11-23T10:07:55.917324Z"
+    dependencies:
+    - condition: sidecarInjectorWebhook.enabled
+      name: sidecarInjectorWebhook
+      repository: ""
+      version: 1.1.0
+    - condition: security.enabled
+      name: security
+      repository: ""
+      version: 1.1.0
+    - condition: gateways.enabled
+      name: gateways
+      repository: ""
+      version: 1.1.0
+    - condition: or mixer.policy.enabled mixer.telemetry.enabled
+      name: mixer
+      repository: ""
+      version: 1.1.0
+    - condition: nodeagent.enabled
+      name: nodeagent
+      repository: ""
+      version: 1.1.0
+    - condition: pilot.enabled
+      name: pilot
+      repository: ""
+      version: 1.1.0
+    - condition: grafana.enabled
+      name: grafana
+      repository: ""
+      version: 1.1.0
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: ""
+      version: 1.1.0
+    - condition: tracing.enabled
+      name: tracing
+      repository: ""
+      version: 1.1.0
+    - condition: galley.enabled
+      name: galley
+      repository: ""
+      version: 1.1.0
+    - condition: kiali.enabled
+      name: kiali
+      repository: ""
+      version: 1.1.0
+    - condition: istiocoredns.enabled
+      name: istiocoredns
+      repository: ""
+      version: 1.1.0
+    - condition: certmanager.enabled
+      name: certmanager
+      repository: ""
+      version: 1.1.0
+    description: Helm chart for all istio components
+    digest: 2d43f74db74febceed97b5b687bcf0b7ada0e1dca8856e3dbff5d889d469b9fe
+    icon: https://istio.io/favicons/android-192x192.png
+    keywords:
+    - istio
+    - security
+    - sidecarInjectorWebhook
+    - mixer
+    - pilot
+    - galley
+    name: istio
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/istio-1.4.0.tgz
+    version: 1.4.0
+  istio-cni:
+  - apiVersion: v1
+    appVersion: 1.4.0
+    created: "2019-11-23T10:07:55.918665Z"
+    description: Helm chart for istio-cni components
+    digest: cbe6c5a305354a1864bdf26e36afab23b9632555d2f0befe9cb2f9f4044be896
+    icon: https://istio.io/favicons/android-192x192.png
+    keywords:
+    - istio-cni
+    - istio
+    name: istio-cni
+    sources:
+    - http://github.com/istio/cni
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/istio-cni-1.4.0.tgz
+    version: 1.4.0
+  istio-init:
+  - apiVersion: v1
+    appVersion: 1.4.0
+    created: "2019-11-23T10:07:55.921601Z"
+    description: Helm chart to initialize Istio CRDs
+    digest: e8c76b760ada35399c11e7e60675fda8431245b01710470b28f57e46742d0b75
+    icon: https://istio.io/favicons/android-192x192.png
+    keywords:
+    - istio
+    - crd
+    name: istio-init
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/istio-init-1.4.0.tgz
+    version: 1.4.0
   jenkins:
   - apiVersion: v1
     appVersion: lts
-    created: "2019-11-22T23:04:06.159177Z"
+    created: "2019-11-23T10:07:55.926076Z"
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
@@ -231,7 +336,7 @@ entries:
   kafka:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-22T23:04:06.16019Z"
+    created: "2019-11-23T10:07:55.928885Z"
     dependencies:
     - condition: kafka-zookeeper.enabled
       name: kafka-zookeeper
@@ -246,7 +351,7 @@ entries:
   kafka-rest:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-22T23:04:06.160615Z"
+    created: "2019-11-23T10:07:55.931371Z"
     description: A Helm chart for Confluent Kafka REST Proxy on Kubernetes
     digest: 9438936e32d28b199f7bf481c6fc97b06ca6a87057bfa6fc0b9d00dec5582f73
     name: kafka-rest
@@ -256,7 +361,7 @@ entries:
   kafka-schema-registry:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-22T23:04:06.161025Z"
+    created: "2019-11-23T10:07:55.93409Z"
     description: A Helm chart for Kafka Schema Registry on Kubernetes
     digest: 714627e61d96437471108138cd2aa985ecb54b7556d9f2946be62d57fc935c48
     name: kafka-schema-registry
@@ -266,7 +371,7 @@ entries:
   kafka-topics-ui:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-22T23:04:06.16129Z"
+    created: "2019-11-23T10:07:55.935181Z"
     description: A Helm chart for Confluent Kafka UI Proxy on Kubernetes
     digest: f380f8cf7977209a23a2433d30b0d0de61a671b4868bb129b1eb3738e6f1b9ea
     name: kafka-topics-ui
@@ -276,7 +381,7 @@ entries:
   kafka-zookeeper:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-22T23:04:06.161872Z"
+    created: "2019-11-23T10:07:55.938038Z"
     description: A Helm chart for Confluent Zookeeper on Kubernetes
     digest: b74410dddf352eb4a33f5adcf39d1b0b278a4ac14a21c106af9fc9f026faaebd
     name: kafka-zookeeper
@@ -286,7 +391,7 @@ entries:
   keycloak:
   - apiVersion: v1
     appVersion: 5.0.0
-    created: "2019-11-22T23:04:06.164645Z"
+    created: "2019-11-23T10:07:55.941921Z"
     dependencies:
     - condition: keycloak.persistence.deployPostgres
       name: postgresql
@@ -318,7 +423,7 @@ entries:
   keycloak-gatekeeper:
   - apiVersion: v1
     appVersion: 4.8.0.Final
-    created: "2019-11-22T23:04:06.165143Z"
+    created: "2019-11-23T10:07:55.943734Z"
     description: Keycloak gatekeeper
     digest: 5406f9508d2369bb8bbf4f8c183845b9796812b52b5bf8b226659a7dcdd149aa
     home: https://github.com/keycloak/keycloak-gatekeeper
@@ -338,7 +443,7 @@ entries:
   kiali:
   - apiVersion: v1
     appVersion: "0.14"
-    created: "2019-11-22T23:04:06.165472Z"
+    created: "2019-11-23T10:07:55.945345Z"
     description: Kiali is an open source project for service mesh observability, refer
       to https://www.kiali.io for details.
     digest: cc2324bf0e9fd17fa0c7f7b1a6dbb7939f64a6bee35629c1035f0315ecd8081f
@@ -349,7 +454,7 @@ entries:
   kiali-operator:
   - apiVersion: v1
     appVersion: "0.14"
-    created: "2019-11-22T23:04:06.165718Z"
+    created: "2019-11-23T10:07:55.946368Z"
     description: Kiali is an open source project for service mesh observability, refer
       to https://www.kiali.io for details.
     digest: baa28a5b46f8bb5966e685e3f2821454f0def5b4870133cf25764eab9f87bad9
@@ -360,7 +465,7 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 6.4.2
-    created: "2019-11-22T23:04:06.166067Z"
+    created: "2019-11-23T10:07:55.947361Z"
     description: Kibana is an open source data visualization plugin for Elasticsearch
     digest: e5e6e0d7f2b5dd91ac7e5e6b8f622f72d250b9aacf0841bf0e3f9596fdd7f199
     home: https://www.elastic.co/products/kibana
@@ -382,7 +487,7 @@ entries:
   kube-spot-termination-notice-handler:
   - apiVersion: v1
     appVersion: 1.10.8-1
-    created: "2019-11-22T23:04:06.166349Z"
+    created: "2019-11-23T10:07:55.94828Z"
     description: Watch and action AWS spot termination events
     digest: b234488ffc4c0109b857cf84bfa233572c4c673decbe8437365095f632abb030
     home: https://github.com/kube-aws/kube-spot-termination-notice-handler
@@ -396,7 +501,7 @@ entries:
   kube2iam:
   - apiVersion: v1
     appVersion: 0.10.7
-    created: "2019-11-22T23:04:06.166766Z"
+    created: "2019-11-23T10:07:55.950076Z"
     description: Provide IAM credentials to pods based on annotations.
     digest: b54ecf254501ae4a3a5e3362286839861624231b215d7708f8a875f29def833d
     home: https://github.com/jtblin/kube2iam
@@ -421,7 +526,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 1.10.1
-    created: "2019-11-22T23:04:06.167285Z"
+    created: "2019-11-23T10:07:55.952325Z"
     description: General-purpose web UI for Kubernetes clusters
     digest: 54a2eeef7d91b2faa2ee034a245d85338f069a5525ccc55f32b1179dd244f4e4
     home: https://github.com/kubernetes/dashboard
@@ -443,7 +548,7 @@ entries:
   mysql:
   - apiVersion: v1
     appVersion: 5.7.14
-    created: "2019-11-22T23:04:06.167837Z"
+    created: "2019-11-23T10:07:55.955653Z"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 88f9b17fa86b4d4bc95c78c696bd4fb6c9fb65795afbb2a3b1bf97a4c9e7c880
@@ -468,7 +573,7 @@ entries:
   nexus3:
   - apiVersion: v1
     appVersion: 3.13.0-01
-    created: "2019-11-22T23:04:06.168512Z"
+    created: "2019-11-23T10:07:55.957299Z"
     description: Sonatype Nexus is an open source repository manager
     digest: c2d68e2f79c3182b6f4010ef61ac7dac90649e9009f6ccb086d6581170ded4a0
     home: https://www.sonatype.com/nexus-repository-oss
@@ -495,7 +600,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2019-11-22T23:04:06.168917Z"
+    created: "2019-11-23T10:07:55.958364Z"
     description: nfs-client is an automatic provisioner that used your *already configured*
       NFS server, automatically creating Persistent Volumes.
     digest: d3005d9da79bafad0c3a1c73d1eac5853c1147e46b513923b05d06a1e1464db2
@@ -514,7 +619,7 @@ entries:
     version: 1.2.6
   nginx:
   - apiVersion: v1
-    created: "2019-11-22T23:04:06.169267Z"
+    created: "2019-11-23T10:07:55.959182Z"
     description: Nginx server
     digest: f5c390b49397d7b26a536a4be7e64f302c0deb99e5ea7fb2c05e6b9a9381787a
     keywords:
@@ -529,7 +634,7 @@ entries:
   nginx-ingress:
   - apiVersion: v1
     appVersion: 0.24.1
-    created: "2019-11-22T23:04:06.170776Z"
+    created: "2019-11-23T10:07:55.961514Z"
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 157947a76bf2b48f5360a5d21522534b17c3cce9b3390ca829b234ed6040728c
@@ -552,7 +657,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "10.1"
-    created: "2019-11-22T23:04:06.171449Z"
+    created: "2019-11-23T10:07:55.963292Z"
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
     digest: ac76ee8704c7cc42a75991e56c258190b44114875d70e60efaef1f76b24e8332
@@ -573,7 +678,7 @@ entries:
     version: 4.0.0
   smtp:
   - apiVersion: v1
-    created: "2019-11-22T23:04:06.171691Z"
+    created: "2019-11-23T10:07:55.964006Z"
     description: SMTP server
     digest: b81bc17a065e724e24c548f3a36a4e1496ab30b3e66c2f6c5b1774950d923b19
     keywords:
@@ -588,7 +693,7 @@ entries:
   sonarqube:
   - apiVersion: v1
     appVersion: 6.7.6
-    created: "2019-11-22T23:04:06.173551Z"
+    created: "2019-11-23T10:07:55.967853Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -619,7 +724,7 @@ entries:
   stolon:
   - apiVersion: v1
     appVersion: 0.13.0
-    created: "2019-11-22T23:04:06.174256Z"
+    created: "2019-11-23T10:07:55.969385Z"
     description: Stolon - PostgreSQL cloud native High Availability.
     digest: d41e7e0ba29a2b9b3e46f18d2db34bba09358c28939e5853f9f090f50bb67e52
     home: https://github.com/sorintlab/stolon
@@ -639,7 +744,7 @@ entries:
   vault:
   - apiVersion: v1
     appVersion: 0.11.2
-    created: "2019-11-22T23:04:06.174746Z"
+    created: "2019-11-23T10:07:55.971229Z"
     description: A Helm chart for Vault, a tool for managing secrets
     digest: e2e83bec01ff8ffcad8311487a304b97235816514a32944e6cfdb1c417dd922d
     home: https://www.vaultproject.io/
@@ -654,4 +759,4 @@ entries:
     urls:
     - https://edyga-org.github.io/edyga-helm-charts-repo/vault-0.14.2.tgz
     version: 0.14.2
-generated: "2019-11-22T23:04:06.144467Z"
+generated: "2019-11-23T10:07:55.850449Z"
