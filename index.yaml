@@ -3,7 +3,7 @@ entries:
   alertmanager:
   - apiVersion: v1
     appVersion: 0.15.1
-    created: "2019-11-23T10:20:48.541238Z"
+    created: "2019-11-23T10:24:41.170962Z"
     description: Alertmanager instance created by the CoreOS Prometheus Operator
     digest: 5c45feba4fbd16ab7a15617ad75db4b82213407ffa1f3bfcb87d736f09b07592
     home: https://github.com/prometheus/alertmanager
@@ -24,7 +24,7 @@ entries:
   atlassian-confluence:
   - apiVersion: v1
     appVersion: 6.9.0
-    created: "2019-11-23T10:20:48.542227Z"
+    created: "2019-11-23T10:24:41.171601Z"
     description: Enterprise Wiki Collaboration Platform.
     digest: 91cc8154bac15f6936cf4f4b08fb83673eb08168884eb6f37f2c86ffc9a5f1d4
     home: https://www.atlassian.com/software/confluence
@@ -40,7 +40,7 @@ entries:
   atlassian-jira-software:
   - apiVersion: v1
     appVersion: 7.10.1
-    created: "2019-11-23T10:20:48.543382Z"
+    created: "2019-11-23T10:24:41.172248Z"
     description: Project Management Tool for Agile Teams.
     digest: 5124e385311084a270ad41d7eeeb33b192f269918cab3da977d816cd0a6430c7
     home: https://www.atlassian.com/software/jira
@@ -55,7 +55,7 @@ entries:
     version: 0.1.0
   bash:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.544545Z"
+    created: "2019-11-23T10:24:41.172598Z"
     description: Bash container
     digest: 8d806b89ff4e6a3ccfa6a2017530f29f02a1a7e140db1e93d86b2d5b75499cd2
     keywords:
@@ -69,7 +69,7 @@ entries:
     version: 1.0.0
   consul:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.548734Z"
+    created: "2019-11-23T10:24:41.173803Z"
     description: Install and configure Consul on Kubernetes.
     digest: 51c157c697275cfef8903768b6fdd107618c2ba9dab3e3965d658541af58f378
     home: https://www.consul.io
@@ -84,7 +84,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.6.2
-    created: "2019-11-23T10:20:48.550457Z"
+    created: "2019-11-23T10:24:41.175011Z"
     description: A Helm chart for Docker Registry
     digest: a6ad4e335d933c28e9ba2425e7b6d37b563832db04b7d37be5c3c2c706006805
     home: https://hub.docker.com/_/registry/
@@ -103,7 +103,7 @@ entries:
   edyga-system:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2019-11-23T10:20:48.558105Z"
+    created: "2019-11-23T10:24:41.181583Z"
     dependencies:
     - condition: kafka-zookeeper.enabled
       name: kafka-zookeeper
@@ -139,7 +139,7 @@ entries:
   efk:
   - apiVersion: v1
     appVersion: 6.4.2
-    created: "2019-11-23T10:20:48.561355Z"
+    created: "2019-11-23T10:24:41.184006Z"
     dependencies:
     - name: kibana
       repository: file://../kibana
@@ -167,7 +167,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 6.4.2
-    created: "2019-11-23T10:20:48.562186Z"
+    created: "2019-11-23T10:24:41.184527Z"
     description: A Helm chart for Elasticsearch cluster
     digest: bea20a2e10fc29e025bdac58db8f193e1247c9f770630c9db1792cb5d50453a4
     maintainers:
@@ -183,7 +183,7 @@ entries:
   elasticsearch-operator:
   - apiVersion: v1
     appVersion: 0.0.12
-    created: "2019-11-23T10:20:48.562835Z"
+    created: "2019-11-23T10:24:41.18491Z"
     description: A Helm chart for Elasticsearch operator
     digest: 496f49d45c9972ec84a8915254d65c0b188b804d0805d701121291a71d40da62
     maintainers:
@@ -198,7 +198,7 @@ entries:
     version: 0.1.5
   exporter-coredns:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.563259Z"
+    created: "2019-11-23T10:24:41.18518Z"
     description: A Helm chart for coredns metrics
     digest: 9ae4b3ee547373ed3b5f5069f4bfbd121f6355d668fd7c99ff3e76c8aeeca57e
     name: exporter-coredns
@@ -207,7 +207,7 @@ entries:
     version: 0.0.3
   exporter-kube-controller-manager:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.563836Z"
+    created: "2019-11-23T10:24:41.185569Z"
     description: A Helm chart for Kubernetes
     digest: 647e0bd98569df420ad08eec189df160c428881c11e96a7f6c0c6685d8146452
     maintainers:
@@ -221,7 +221,7 @@ entries:
     version: 0.1.10
   exporter-kube-dns:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.564432Z"
+    created: "2019-11-23T10:24:41.185845Z"
     description: A Helm chart singleton for kube-state-metrics
     digest: cc3780859ff53182076af7923e23aa98bb989a861166309f6362f13d79c041cd
     maintainers:
@@ -235,7 +235,7 @@ entries:
     version: 0.1.7
   exporter-kube-etcd:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.565539Z"
+    created: "2019-11-23T10:24:41.186255Z"
     description: A Helm chart for Kubernetes
     digest: 26bc43fb5fe11be65b6d3e26a87ac8a2dbc00404c66bca71cb5e27efd84cc678
     maintainers:
@@ -247,7 +247,7 @@ entries:
     version: 0.1.15
   exporter-kube-scheduler:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.566513Z"
+    created: "2019-11-23T10:24:41.186617Z"
     description: A Helm chart singleton for kube-state-metrics
     digest: d1aac34b3803939a98819e63479d7ab1090401ea9e7e5283047bff5d6c11a4cd
     maintainers:
@@ -261,7 +261,7 @@ entries:
     version: 0.1.9
   exporter-kube-state:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.568979Z"
+    created: "2019-11-23T10:24:41.187238Z"
     description: A Helm chart singleton for kube-state-metrics
     digest: 51cd408765bf19c665b74dd2e3cefe80d4a36311dc6b430e28e33252c71dab48
     maintainers:
@@ -273,7 +273,7 @@ entries:
     version: 0.2.6
   exporter-kubelets:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.570173Z"
+    created: "2019-11-23T10:24:41.187583Z"
     description: A Helm chart for Kubernetes
     digest: 62397abff69b1dd77be2743b6f9014e0cc1c84ff9ab6d6d42c20ce8d9ffa301b
     maintainers:
@@ -287,7 +287,7 @@ entries:
     version: 0.2.11
   exporter-kubernetes:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.570638Z"
+    created: "2019-11-23T10:24:41.187907Z"
     description: A Helm chart for Kubernetes
     digest: 62bd5fd58ebd2c668c552c508e7245184d586b27b8c48fcac2f50078bd70cb4f
     maintainers:
@@ -300,7 +300,7 @@ entries:
   exporter-node:
   - apiVersion: v1
     appVersion: 0.14.0
-    created: "2019-11-23T10:20:48.57148Z"
+    created: "2019-11-23T10:24:41.188615Z"
     description: A Helm chart for Kubernetes node exporter
     digest: 0501e03ead3b85b1ec944e7930ad4bb18ce77f551a5f596e5aae777b8d29ba2f
     home: https://github.com/prometheus/node-exporter
@@ -320,7 +320,7 @@ entries:
   grafana:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2019-11-23T10:20:48.581379Z"
+    created: "2019-11-23T10:24:41.192906Z"
     description: A Helm chart for Kubernetes
     digest: 3bc4bf1873c825a7ede9c0d95324092e9818f8cab0195840a19767ddbac82036
     name: grafana
@@ -329,7 +329,7 @@ entries:
     version: 1.1.0
   ingress:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.582872Z"
+    created: "2019-11-23T10:24:41.193344Z"
     description: Ingress single entry poing
     digest: 330f41a9e418d91f4c3055d5c38cac304d46f07f04a08a4cf1e7640e318a7431
     keywords:
@@ -345,7 +345,7 @@ entries:
   istio:
   - apiVersion: v1
     appVersion: 1.4.0
-    created: "2019-11-23T10:20:48.616707Z"
+    created: "2019-11-23T10:24:41.220018Z"
     dependencies:
     - condition: sidecarInjectorWebhook.enabled
       name: sidecarInjectorWebhook
@@ -418,7 +418,7 @@ entries:
   istio-cni:
   - apiVersion: v1
     appVersion: 1.4.0
-    created: "2019-11-23T10:20:48.61718Z"
+    created: "2019-11-23T10:24:41.220421Z"
     description: Helm chart for istio-cni components
     digest: cbe6c5a305354a1864bdf26e36afab23b9632555d2f0befe9cb2f9f4044be896
     icon: https://istio.io/favicons/android-192x192.png
@@ -434,7 +434,7 @@ entries:
   istio-init:
   - apiVersion: v1
     appVersion: 1.4.0
-    created: "2019-11-23T10:20:48.619412Z"
+    created: "2019-11-23T10:24:41.22163Z"
     description: Helm chart to initialize Istio CRDs
     digest: e8c76b760ada35399c11e7e60675fda8431245b01710470b28f57e46742d0b75
     icon: https://istio.io/favicons/android-192x192.png
@@ -450,7 +450,7 @@ entries:
   jenkins:
   - apiVersion: v1
     appVersion: lts
-    created: "2019-11-23T10:20:48.621784Z"
+    created: "2019-11-23T10:24:41.223585Z"
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
@@ -478,7 +478,7 @@ entries:
   kafka:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-23T10:20:48.623538Z"
+    created: "2019-11-23T10:24:41.22549Z"
     dependencies:
     - condition: kafka-zookeeper.enabled
       name: kafka-zookeeper
@@ -493,7 +493,7 @@ entries:
   kafka-rest:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-23T10:20:48.624622Z"
+    created: "2019-11-23T10:24:41.226497Z"
     description: A Helm chart for Confluent Kafka REST Proxy on Kubernetes
     digest: 9438936e32d28b199f7bf481c6fc97b06ca6a87057bfa6fc0b9d00dec5582f73
     name: kafka-rest
@@ -503,7 +503,7 @@ entries:
   kafka-schema-registry:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-23T10:20:48.626834Z"
+    created: "2019-11-23T10:24:41.227311Z"
     description: A Helm chart for Kafka Schema Registry on Kubernetes
     digest: 714627e61d96437471108138cd2aa985ecb54b7556d9f2946be62d57fc935c48
     name: kafka-schema-registry
@@ -513,7 +513,7 @@ entries:
   kafka-topics-ui:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-23T10:20:48.627247Z"
+    created: "2019-11-23T10:24:41.227779Z"
     description: A Helm chart for Confluent Kafka UI Proxy on Kubernetes
     digest: f380f8cf7977209a23a2433d30b0d0de61a671b4868bb129b1eb3738e6f1b9ea
     name: kafka-topics-ui
@@ -523,7 +523,7 @@ entries:
   kafka-zookeeper:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-23T10:20:48.62809Z"
+    created: "2019-11-23T10:24:41.228491Z"
     description: A Helm chart for Confluent Zookeeper on Kubernetes
     digest: b74410dddf352eb4a33f5adcf39d1b0b278a4ac14a21c106af9fc9f026faaebd
     name: kafka-zookeeper
@@ -533,7 +533,7 @@ entries:
   keycloak:
   - apiVersion: v1
     appVersion: 5.0.0
-    created: "2019-11-23T10:20:48.635131Z"
+    created: "2019-11-23T10:24:41.233209Z"
     dependencies:
     - condition: keycloak.persistence.deployPostgres
       name: postgresql
@@ -565,7 +565,7 @@ entries:
   keycloak-gatekeeper:
   - apiVersion: v1
     appVersion: 4.8.0.Final
-    created: "2019-11-23T10:20:48.638465Z"
+    created: "2019-11-23T10:24:41.233959Z"
     description: Keycloak gatekeeper
     digest: 5406f9508d2369bb8bbf4f8c183845b9796812b52b5bf8b226659a7dcdd149aa
     home: https://github.com/keycloak/keycloak-gatekeeper
@@ -585,7 +585,7 @@ entries:
   kiali:
   - apiVersion: v1
     appVersion: "0.14"
-    created: "2019-11-23T10:20:48.639748Z"
+    created: "2019-11-23T10:24:41.234587Z"
     description: Kiali is an open source project for service mesh observability, refer
       to https://www.kiali.io for details.
     digest: cc2324bf0e9fd17fa0c7f7b1a6dbb7939f64a6bee35629c1035f0315ecd8081f
@@ -596,7 +596,7 @@ entries:
   kiali-operator:
   - apiVersion: v1
     appVersion: "0.14"
-    created: "2019-11-23T10:20:48.640155Z"
+    created: "2019-11-23T10:24:41.235029Z"
     description: Kiali is an open source project for service mesh observability, refer
       to https://www.kiali.io for details.
     digest: baa28a5b46f8bb5966e685e3f2821454f0def5b4870133cf25764eab9f87bad9
@@ -607,7 +607,7 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 6.4.2
-    created: "2019-11-23T10:20:48.640794Z"
+    created: "2019-11-23T10:24:41.235571Z"
     description: Kibana is an open source data visualization plugin for Elasticsearch
     digest: e5e6e0d7f2b5dd91ac7e5e6b8f622f72d250b9aacf0841bf0e3f9596fdd7f199
     home: https://www.elastic.co/products/kibana
@@ -628,7 +628,7 @@ entries:
     version: 0.4.3
   kube-prometheus:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.649564Z"
+    created: "2019-11-23T10:24:41.244015Z"
     dependencies:
     - condition: deployAlertManager
       name: alertmanager
@@ -691,7 +691,7 @@ entries:
   kube-spot-termination-notice-handler:
   - apiVersion: v1
     appVersion: 1.10.8-1
-    created: "2019-11-23T10:20:48.650571Z"
+    created: "2019-11-23T10:24:41.244518Z"
     description: Watch and action AWS spot termination events
     digest: b234488ffc4c0109b857cf84bfa233572c4c673decbe8437365095f632abb030
     home: https://github.com/kube-aws/kube-spot-termination-notice-handler
@@ -705,7 +705,7 @@ entries:
   kube2iam:
   - apiVersion: v1
     appVersion: 0.10.7
-    created: "2019-11-23T10:20:48.651701Z"
+    created: "2019-11-23T10:24:41.245207Z"
     description: Provide IAM credentials to pods based on annotations.
     digest: b54ecf254501ae4a3a5e3362286839861624231b215d7708f8a875f29def833d
     home: https://github.com/jtblin/kube2iam
@@ -730,7 +730,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 1.10.1
-    created: "2019-11-23T10:20:48.652986Z"
+    created: "2019-11-23T10:24:41.246056Z"
     description: General-purpose web UI for Kubernetes clusters
     digest: 54a2eeef7d91b2faa2ee034a245d85338f069a5525ccc55f32b1179dd244f4e4
     home: https://github.com/kubernetes/dashboard
@@ -752,7 +752,7 @@ entries:
   mysql:
   - apiVersion: v1
     appVersion: 5.7.14
-    created: "2019-11-23T10:20:48.654462Z"
+    created: "2019-11-23T10:24:41.247111Z"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 88f9b17fa86b4d4bc95c78c696bd4fb6c9fb65795afbb2a3b1bf97a4c9e7c880
@@ -777,7 +777,7 @@ entries:
   nexus3:
   - apiVersion: v1
     appVersion: 3.13.0-01
-    created: "2019-11-23T10:20:48.655699Z"
+    created: "2019-11-23T10:24:41.248609Z"
     description: Sonatype Nexus is an open source repository manager
     digest: c2d68e2f79c3182b6f4010ef61ac7dac90649e9009f6ccb086d6581170ded4a0
     home: https://www.sonatype.com/nexus-repository-oss
@@ -804,7 +804,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2019-11-23T10:20:48.65784Z"
+    created: "2019-11-23T10:24:41.249334Z"
     description: nfs-client is an automatic provisioner that used your *already configured*
       NFS server, automatically creating Persistent Volumes.
     digest: d3005d9da79bafad0c3a1c73d1eac5853c1147e46b513923b05d06a1e1464db2
@@ -823,7 +823,7 @@ entries:
     version: 1.2.6
   nginx:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.659076Z"
+    created: "2019-11-23T10:24:41.250131Z"
     description: Nginx server
     digest: f5c390b49397d7b26a536a4be7e64f302c0deb99e5ea7fb2c05e6b9a9381787a
     keywords:
@@ -838,7 +838,7 @@ entries:
   nginx-ingress:
   - apiVersion: v1
     appVersion: 0.24.1
-    created: "2019-11-23T10:20:48.662093Z"
+    created: "2019-11-23T10:24:41.251923Z"
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 157947a76bf2b48f5360a5d21522534b17c3cce9b3390ca829b234ed6040728c
@@ -861,7 +861,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "10.1"
-    created: "2019-11-23T10:20:48.663952Z"
+    created: "2019-11-23T10:24:41.253479Z"
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
     digest: ac76ee8704c7cc42a75991e56c258190b44114875d70e60efaef1f76b24e8332
@@ -882,7 +882,7 @@ entries:
     version: 4.0.0
   prometheus:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.666071Z"
+    created: "2019-11-23T10:24:41.254602Z"
     description: Prometheus instance created by the CoreOS Prometheus Operator
     digest: 483073af7d8a0b99bb0261f599439e0e22572e95e59660812abfcd4ddb6291e4
     maintainers:
@@ -894,10 +894,26 @@ entries:
     urls:
     - https://edyga-org.github.io/edyga-helm-charts-repo/prometheus-0.0.51.tgz
     version: 0.0.51
+  prometheus-grafana:
+  - apiVersion: v1
+    created: "2019-11-23T10:24:41.255918Z"
+    description: Grafana instance for kube-prometheus
+    digest: 77acf02fbd5b74c2118f1e5ddcdc271c41ac8523b9644e868be57406f3d4e8a8
+    maintainers:
+    - email: weiwei.inf@gmail.com
+      name: Wei Wei
+    - email: vglafirov@gmail.com
+      name: Vladimir Glafirov
+    name: prometheus-grafana
+    sources:
+    - https://github.com/coreos/prometheus-operator
+    urls:
+    - https://edyga-org.github.io/edyga-helm-charts-repo/prometheus-grafana-0.0.37.tgz
+    version: 0.0.37
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.20.0
-    created: "2019-11-23T10:20:48.667237Z"
+    created: "2019-11-23T10:24:41.256645Z"
     description: Provides easy monitoring definitions for Kubernetes services, and
       deployment and management of Prometheus instances.
     digest: c3d77fe0b0719185623ee4bbe5b6fda454e517596e86a91f6a5b243de52797ef
@@ -916,7 +932,7 @@ entries:
     version: 0.0.29
   smtp:
   - apiVersion: v1
-    created: "2019-11-23T10:20:48.667902Z"
+    created: "2019-11-23T10:24:41.25708Z"
     description: SMTP server
     digest: b81bc17a065e724e24c548f3a36a4e1496ab30b3e66c2f6c5b1774950d923b19
     keywords:
@@ -931,7 +947,7 @@ entries:
   sonarqube:
   - apiVersion: v1
     appVersion: 6.7.6
-    created: "2019-11-23T10:20:48.674847Z"
+    created: "2019-11-23T10:24:41.260374Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -962,7 +978,7 @@ entries:
   stolon:
   - apiVersion: v1
     appVersion: 0.13.0
-    created: "2019-11-23T10:20:48.677055Z"
+    created: "2019-11-23T10:24:41.261742Z"
     description: Stolon - PostgreSQL cloud native High Availability.
     digest: d41e7e0ba29a2b9b3e46f18d2db34bba09358c28939e5853f9f090f50bb67e52
     home: https://github.com/sorintlab/stolon
@@ -982,7 +998,7 @@ entries:
   vault:
   - apiVersion: v1
     appVersion: 0.11.2
-    created: "2019-11-23T10:20:48.678527Z"
+    created: "2019-11-23T10:24:41.263124Z"
     description: A Helm chart for Vault, a tool for managing secrets
     digest: e2e83bec01ff8ffcad8311487a304b97235816514a32944e6cfdb1c417dd922d
     home: https://www.vaultproject.io/
@@ -997,4 +1013,4 @@ entries:
     urls:
     - https://edyga-org.github.io/edyga-helm-charts-repo/vault-0.14.2.tgz
     version: 0.14.2
-generated: "2019-11-23T10:20:48.539544Z"
+generated: "2019-11-23T10:24:41.169944Z"
